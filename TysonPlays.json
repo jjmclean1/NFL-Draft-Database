@@ -1,0 +1,254 @@
+[
+    {
+        "v_time": "[00:00]",
+        "v_end": "[00:17]",
+        "description": "\u2b50 TYSON | [1&20] 41yd | \u2705 10yds (PPA:1.13) | Sam Leavitt pass complete to Jordyn Tyson for 10 yds to the NAU 49 [STATS: Reception: 10yd]",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[00:18]",
+        "v_end": "[00:32]",
+        "description": "\u2b50 TYSON | [2&1] 82yd | \u2705 12yds (PPA:0.03) | Sam Leavitt pass complete to Jordyn Tyson for 12 yds to the NAU 6 for a 1ST down [STATS: Reception: 12yd]",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[00:33]",
+        "v_end": "[00:50]",
+        "description": "\u2b50 TYSON | [1&10] 11yd | \ud83d\udd25 22yds (PPA:1.33) | Sam Leavitt pass complete to Jordyn Tyson for 22 yds to the ASU 33 for a 1ST down [STATS: Reception: 22yd]",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[00:51]",
+        "v_end": "[00:59]",
+        "description": "\u2b50 TYSON | [1&10] 81yd | \ud83d\udd25 19yds (PPA:2.60) | Sam Leavitt pass complete to Jordyn Tyson for 19 yds for a TD (Jesus Gomez KICK) [STATS: Reception: 19yd | Touchdown: 1yd]",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[01:00]",
+        "v_end": "[01:31]",
+        "description": "\u2b50 TYSON | [3&6] 38yd | \ud83d\udd25 13yds (PPA:2.67) | Sam Leavitt pass complete to Jordyn Tyson for 13 yds Jordyn Tyson fumbled, recovered by ASU Jalen Moss for a 1ST down",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[01:32]",
+        "v_end": "[01:46]",
+        "description": "\u2b50 TYSON | [2&14] 86yd | \u2705 10yds (PPA:0.34) | Sam Leavitt pass complete to Jordyn Tyson for 10 yds to the NAU 4 [STATS: Reception: 10yd]",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[01:47]",
+        "v_end": "[01:59]",
+        "description": "\u2b50 TYSON | [1&10] 42yd | \u2705 6yds (PPA:0.40) | Sam Leavitt pass complete to Jordyn Tyson for 6 yds to the ASU 48 [STATS: Reception: 6yd]",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[02:00]",
+        "v_end": "[02:11]",
+        "description": "\u2b50 TYSON | [2&8] 32yd | \ud83d\udd25 15yds (PPA:2.15) | Sam Leavitt pass complete to Jordyn Tyson for 15 yds to the ASU 47 for a 1ST down [STATS: Reception: 15yd]",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[02:12]",
+        "v_end": "[02:26]",
+        "description": "\u2b50 TYSON | [1&10] 46yd | \ud83d\uded1 0yds (PPA:-1.16) | Sam Leavitt pass incomplete to Jordyn Tyson [STATS: Target: 1yd]",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[02:27]",
+        "v_end": "[02:35]",
+        "description": "\u2b50 TYSON | [2&10] 46yd | \ud83d\uded1 4yds (PPA:-0.16) | Sam Leavitt pass complete to Jordyn Tyson for 4 yds to the 50 yard line [STATS: Reception: 4yd]",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[02:36]",
+        "v_end": "[02:51]",
+        "description": "\u2b50 TYSON | [1&10] 84yd | \ud83d\udd25 16yds (PPA:2.57) | Sam Leavitt pass complete to Jordyn Tyson for 16 yds for a TD (Jesus Gomez KICK) [STATS: Reception: 16yd | Touchdown: 1yd]",
+        "opponent": "Northern Arizona"
+    },
+    {
+        "v_time": "[03:14]",
+        "v_end": "[03:26]",
+        "description": "\u2b50 TYSON | [1&10] 31yd | \ud83d\udd25 36yds (PPA:2.70) | Sam Leavitt pass complete to Jordyn Tyson for 36 yds to the TXST 33 for a 1ST down [STATS: Reception: 36yd]",
+        "opponent": "Texas State"
+    },
+    {
+        "v_time": "[03:27]",
+        "v_end": "[04:29]",
+        "description": "\u2b50 TYSON | [1&10] 70yd | \ud83d\udd25 30yds (PPA:2.81) | Sam Leavitt pass complete to Jordyn Tyson for 30 yds for a TD (Jesus Gomez KICK) [STATS: Reception: 30yd | Touchdown: 1yd]",
+        "opponent": "Texas State"
+    },
+    {
+        "v_time": "[04:30]",
+        "v_end": "[05:54]",
+        "description": "\u2b50 TYSON | [1&10] 35yd | \ud83d\udd25 18yds (PPA:1.63) | Sam Leavitt pass complete to Jordyn Tyson for 18 yds to the TXST 47 for a 1ST down [STATS: Reception: 18yd]",
+        "opponent": "Texas State"
+    },
+    {
+        "v_time": "[05:55]",
+        "v_end": "[06:04]",
+        "description": "\u2b50 TYSON | [2&6] 57yd | \u2705 7yds (PPA:0.73) | Sam Leavitt pass complete to Jordyn Tyson for 7 yds to the TXST 36 for a 1ST down [STATS: Reception: 7yd]",
+        "opponent": "Texas State"
+    },
+    {
+        "v_time": "[06:05]",
+        "v_end": "[06:15]",
+        "description": "\u2b50 TYSON | [2&10] 74yd | \u2705 9yds (PPA:0.51) | Sam Leavitt pass complete to Jordyn Tyson for 9 yds to the TXST 17 [STATS: Reception: 9yd]",
+        "opponent": "Texas State"
+    },
+    {
+        "v_time": "[06:27]",
+        "v_end": "[06:36]",
+        "description": "\u2b50 TYSON | [1&10] 83yd | \u2705 12yds (PPA:0.76) | Sam Leavitt pass complete to Jordyn Tyson for 12 yds to the ASU 29 for a 1ST down [STATS: Reception: 12yd]",
+        "opponent": "1Baylor"
+    },
+    {
+        "v_time": "[06:37]",
+        "v_end": "[06:48]",
+        "description": "\u2b50 TYSON | [4&3] 36yd | \ud83d\udd25 4yds (PPA:1.97) | Sam Leavitt pass complete to Jordyn Tyson for 4 yds to the BAY 32 for a 1ST down [STATS: Reception: 4yd]",
+        "opponent": "1Baylor"
+    },
+    {
+        "v_time": "[06:49]",
+        "v_end": "[06:58]",
+        "description": "\u2b50 TYSON | [2&14] 19yd | \ud83d\udd25 19yds (PPA:3.18) | Sam Leavitt pass complete to Jordyn Tyson for 19 yds for a TD (Jordyn Tyson pass to for Two-Point Conversion) [STATS: Reception: 19yd | Touchdown: 1yd]",
+        "opponent": "1Baylor"
+    },
+    {
+        "v_time": "[07:28]",
+        "v_end": "[07:36]",
+        "description": "\u2b50 TYSON | [2&6] 29yd | \ud83d\udd25 11yds (PPA:1.44) | Sam Leavitt pass complete to Jordyn Tyson for 11 yds to the ASU 40 for a 1ST down [STATS: Reception: 11yd]",
+        "opponent": "TCU"
+    },
+    {
+        "v_time": "[07:37]",
+        "v_end": "[07:49]",
+        "description": "\u2b50 TYSON | [3&3] 14yd | \ud83d\uded1 -7yds (PPA:0.00) | (09:56) No Huddle-Shotgun Leavitt,Sam pass complete deep right to Tyson,Jordyn caught at ASU40, for 26 yards to the ASU40, out of bounds at ASU40 PENALTY ASU Holding (Obigbo,Jimeto) 7 yards from ASU14 to ASU07. NO PLAY.",
+        "opponent": "TCU"
+    },
+    {
+        "v_time": "[07:50]",
+        "v_end": "[08:05]",
+        "description": "\u2b50 TYSON | [1&15] 20yd | \ud83d\udd25 15yds (PPA:1.58) | Sam Leavitt pass complete to Jordyn Tyson for 15 yds to the ASU 35 for a 1ST down [STATS: Reception: 15yd]",
+        "opponent": "TCU"
+    },
+    {
+        "v_time": "[08:05]",
+        "v_end": "[08:16]",
+        "description": "\u2b50 TYSON | [3&2] 43yd | \ud83d\udd25 57yds (PPA:5.56) | Sam Leavitt pass complete to Jordyn Tyson for 57 yds for a TD (Jesus Gomez KICK) [STATS: Reception: 57yd | Touchdown: 1yd]",
+        "opponent": "TCU"
+    },
+    {
+        "v_time": "[08:17]",
+        "v_end": "[09:29]",
+        "description": "\u2b50 TYSON | [1&10] 61yd | \ud83d\uded1 4yds (PPA:-0.09) | Sam Leavitt pass complete to Jordyn Tyson for 4 yds to the TCU 35 [STATS: Reception: 4yd]",
+        "opponent": "TCU"
+    },
+    {
+        "v_time": "[09:30]",
+        "v_end": "[09:48]",
+        "description": "\u2b50 TYSON | [4&4] 96yd | \ud83d\udd25 4yds (PPA:2.98) | Sam Leavitt pass complete to Jordyn Tyson for 4 yds for a TD (Jesus Gomez KICK) [STATS: Reception: 4yd | Touchdown: 1yd]",
+        "opponent": "TCU"
+    },
+    {
+        "v_time": "[10:11]",
+        "v_end": "[10:25]",
+        "description": "\u2b50 TYSON | [2&6] 71yd | \u2705 5yds (PPA:0.09) | Jeff Sims pass complete to Jordyn Tyson for 5 yds to the ASU 34 [STATS: Reception: 5yd]",
+        "opponent": "1Utah"
+    },
+    {
+        "v_time": "[10:26]",
+        "v_end": "[10:56]",
+        "description": "\u2b50 TYSON | [2&8] 38yd | \u2705 5yds (PPA:0.07) | Jeff Sims pass complete to Jordyn Tyson for 5 yds to the UTAH 33 [STATS: Reception: 5yd]",
+        "opponent": "1Utah"
+    },
+    {
+        "v_time": "[10:57]",
+        "v_end": "[11:01]",
+        "description": "\u2b50 TYSON | [3&5] 11yd | \ud83d\uded1 4yds (PPA:-0.04) | Jeff Sims pass complete to Jordyn Tyson for 4 yds to the UTAH 7 [STATS: Reception: 4yd]",
+        "opponent": "1Utah"
+    },
+    {
+        "v_time": "[11:02]",
+        "v_end": "[11:17]",
+        "description": "\u2b50 TYSON | [1&3] 3yd | \ud83d\udd25 3yds (PPA:1.46) | Jordyn Tyson run for 3 yds for a TD (Jesus Gomez KICK) [STATS: Rush: 3yd | Touchdown: 1yd]",
+        "opponent": "1Utah"
+    },
+    {
+        "v_time": "[11:18]",
+        "v_end": "[11:36]",
+        "description": "\u2b50 TYSON | [2&10] 55yd | \ud83d\udd25 11yds (PPA:2.03) | Jeff Sims pass complete to Jordyn Tyson for 11 yds to the UTAH 44 for a 1ST down [STATS: Reception: 11yd]",
+        "opponent": "1Utah"
+    },
+    {
+        "v_time": "[11:45]",
+        "v_end": "[11:55]",
+        "description": "\u2b50 TYSON | [1&10] 43yd | \ud83d\uded1 1yds (PPA:-0.93) | Jordyn Tyson run for 1 yd to the ASU 44 [STATS: Rush: 1yd]",
+        "opponent": "Texas Tech"
+    },
+    {
+        "v_time": "[11:56]",
+        "v_end": "[12:06]",
+        "description": "\u2b50 TYSON | [2&9] 44yd | \u2705 6yds (PPA:0.33) | Sam Leavitt pass complete to Jordyn Tyson for 6 yds to the 50 yard line [STATS: Reception: 6yd]",
+        "opponent": "Texas Tech"
+    },
+    {
+        "v_time": "[12:07]",
+        "v_end": "[12:44]",
+        "description": "\u2b50 TYSON | [2&4] 31yd | \u2705 9yds (PPA:0.99) | Sam Leavitt pass complete to Jordyn Tyson for 9 yds to the ASU 40 for a 1ST down [STATS: Reception: 9yd]",
+        "opponent": "Texas Tech"
+    },
+    {
+        "v_time": "[12:45]",
+        "v_end": "[12:58]",
+        "description": "\u2b50 TYSON | [2&9] 41yd | \u2705 7yds (PPA:0.58) | Sam Leavitt pass complete to Jordyn Tyson for 7 yds to the ASU 48 [STATS: Reception: 7yd]",
+        "opponent": "Texas Tech"
+    },
+    {
+        "v_time": "[12:59]",
+        "v_end": "[13:08]",
+        "description": "\u2b50 TYSON | [3&2] 98yd | \ud83d\udd25 2yds (PPA:2.54) | Sam Leavitt pass complete to Jordyn Tyson for 2 yds for a TD (Jesus Gomez KICK) [STATS: Reception: 2yd | Touchdown: 1yd]",
+        "opponent": "Texas Tech"
+    },
+    {
+        "v_time": "[13:09]",
+        "v_end": "[13:28]",
+        "description": "\u2b50 TYSON | [1&10] 9yd | \u2705 7yds (PPA:0.37) | Sam Leavitt pass complete to Jordyn Tyson for 7 yds to the ASU 16 [STATS: Reception: 7yd]",
+        "opponent": "Texas Tech"
+    },
+    {
+        "v_time": "[13:29]",
+        "v_end": "[13:30]",
+        "description": "\u2b50 TYSON | [1&10] 37yd | \ud83d\uded1 0yds (PPA:-1.07) | Sam Leavitt pass incomplete to Jordyn Tyson [STATS: Target: 1yd]",
+        "opponent": "Texas Tech"
+    },
+    {
+        "v_time": "[13:31]",
+        "v_end": "[13:40]",
+        "description": "\u2b50 TYSON | [2&10] 37yd | \u2705 8yds (PPA:0.74) | Sam Leavitt pass complete to Jordyn Tyson for 8 yds to the ASU 45 [STATS: Reception: 8yd]",
+        "opponent": "Texas Tech"
+    },
+    {
+        "v_time": "[13:41]",
+        "v_end": "[13:49]",
+        "description": "\u2b50 TYSON | [4&2] 45yd | \ud83d\udd25 33yds (PPA:3.70) | Sam Leavitt pass complete to Jordyn Tyson for 33 yds to the TTU 22 for a 1ST down [STATS: Reception: 33yd]",
+        "opponent": "Texas Tech"
+    },
+    {
+        "v_time": "[14:18]",
+        "v_end": "[14:29]",
+        "description": "\u2b50 TYSON | [3&8] 63yd | \ud83d\udd25 42yds (PPA:4.01) | (10:18) No Huddle-Shotgun #2 J.Sims pass complete deep right to #0 J.Tyson caught at COLO31, for 42 yards to the COLO21 (#13 J.Slaughter), out of bounds, 1ST DOWN [STATS: Reception: 42yd]",
+        "opponent": "Colorado"
+    },
+    {
+        "v_time": "[14:30]",
+        "v_end": "[14:54]",
+        "description": "\u2b50 TYSON | [2&11] 76yd | \ud83d\udd25 19yds (PPA:2.41) | (04:15) No Huddle-Shotgun #2 J.Sims pass complete short left to #0 J.Tyson caught at ASU41, for 19 yards to the ASU43 (#13 J.Slaughter), 1ST DOWN [STATS: Reception: 19yd]",
+        "opponent": "Colorado"
+    },
+    {
+        "v_time": "[14:54]",
+        "v_end": "[15:18]",
+        "description": "\u2b50 TYSON | [1&10] 25yd | \ud83d\uded1 3yds (PPA:-0.30) | Sam Leavitt pass complete to Jordyn Tyson for 3 yds to the ASU 22 [STATS: Reception: 3yd]",
+        "opponent": "1Arizona"
+    }
+]
