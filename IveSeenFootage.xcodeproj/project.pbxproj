@@ -7,17 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD427F692F963663003D5079 /* MICROGBE.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD427F682F963663003D5079 /* MICROGBE.ttf */; };
 		FDAAA1262F7FBDD600F1FD94 /* TysonPlays.json in Resources */ = {isa = PBXBuildFile; fileRef = FDAAA1252F7FBDD600F1FD94 /* TysonPlays.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD427F682F963663003D5079 /* MICROGBE.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MICROGBE.ttf; sourceTree = "<group>"; };
+		FD427F742F981854003D5079 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = README.md; sourceTree = "<group>"; };
 		FDAAA0E72F7F077000F1FD94 /* IveSeenFootage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IveSeenFootage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAAA1252F7FBDD600F1FD94 /* TysonPlays.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TysonPlays.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		FD427F6B2F9638FB003D5079 /* Exceptions for "IveSeenFootage" folder in "IveSeenFootage" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = FDAAA0E62F7F077000F1FD94 /* IveSeenFootage */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FDAAA0E92F7F077000F1FD94 /* IveSeenFootage */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				FD427F6B2F9638FB003D5079 /* Exceptions for "IveSeenFootage" folder in "IveSeenFootage" target */,
+			);
 			path = IveSeenFootage;
 			sourceTree = "<group>";
 		};
@@ -39,6 +55,8 @@
 			children = (
 				FDAAA0E92F7F077000F1FD94 /* IveSeenFootage */,
 				FDAAA1252F7FBDD600F1FD94 /* TysonPlays.json */,
+				FD427F742F981854003D5079 /* README.md */,
+				FD427F682F963663003D5079 /* MICROGBE.ttf */,
 				FDAAA0E82F7F077000F1FD94 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD427F692F963663003D5079 /* MICROGBE.ttf in Resources */,
 				FDAAA1262F7FBDD600F1FD94 /* TysonPlays.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +277,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TWKG2HK2P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IveSeenFootage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -289,8 +310,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TWKG2HK2P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IveSeenFootage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
