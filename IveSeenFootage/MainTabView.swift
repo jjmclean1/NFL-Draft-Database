@@ -181,9 +181,7 @@ struct SearchView: View {
                             .overlay(Rectangle().fill(jamTeal).frame(height: 3), alignment: .bottom)
                     )
                     
-                    //search bar
-                    
-                    HStack {
+                            HStack {
                         Image(systemName: "magnifyingglass")
                             .foregroundColor(jamTeal)
                         

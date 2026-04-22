@@ -8,17 +8,16 @@ struct Play: Identifiable, Hashable {
     let startTime: Int
     let endTime: Int
     
-    // Filter tags extracted from the data
     let isTouchdown: Bool
     let isFirstDown: Bool
     let airYards: Int
 }
 
 enum PlayFilter: String, CaseIterable {
-    case all = "All Plays"
-    case touchdowns = "Touchdowns"
-    case firstDowns = "1st Downs"
-    case explosive = "20+ Yds"
+    case all = "ALL PLAYS"
+    case touchdowns = "TOUCHDOWNS"
+    case firstDowns = "1ST DOWNS"
+    case explosive = "20+ YDS"
 }
 
 struct GameLog: Identifiable, Codable {

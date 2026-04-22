@@ -1,10 +1,7 @@
 import SwiftUI
-import WebKit
 
 struct FilmView: View {
     let prospect: Prospect
-    
-    // Core App Colors
     let bgDark = Color(red: 0.03, green: 0.05, blue: 0.08)
     var teamSecondary: Color { Color(hex: prospect.secondaryColorHex) }
     
@@ -23,7 +20,6 @@ struct FilmView: View {
     
     var body: some View {
         VStack(spacing: 0) {
-            // 1. YouTube Video Player
             if let play = currentPlay {
                 YouTubePlayerView(videoID: play.videoID, startTime: play.startTime, endTime: play.endTime)
                     .frame(height: 230)
@@ -35,13 +31,13 @@ struct FilmView: View {
                     .overlay(
                         VStack(spacing: 8) {
                             ProgressView().progressViewStyle(CircularProgressViewStyle(tint: teamSecondary))
-                            Text("INITIALIZING FILM TERMINAL...").font(.custom("MicrogrammaD-BoldExte", size: 8)).foregroundColor(teamSecondary)
+                            Text("INITIALIZING FILM TERMINAL...")
+                                .font(.custom("MicrogrammaD-BoldExte", size: 8))
+                                .foregroundColor(teamSecondary)
                         }
                     )
             }
-            
-            // 2. Terminal Header Section
-            HStack {
+                    HStack {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("\(prospect.firstName.uppercased()) \(prospect.lastName.uppercased())")
                         .font(.custom("MicrogrammaD-BoldExte", size: 16))
@@ -51,21 +47,30 @@ struct FilmView: View {
                         .foregroundColor(.gray)
                 }
                 Spacer()
-                
             }
             .padding()
             .background(bgDark)
             
-            // 3. Cyber Filter Chips
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
                     ForEach(PlayFilter.allCases, id: \.self) { filter in
                         FilterChip(
-                            title: filter.rawValue.uppercased(),
+                            title: filter.rawValue,
                             isSelected: selectedFilter == filter,
                             accentColor: teamSecondary
                         ) {
-                            withAnimation { selectedFilter = filter }
+                            selectedFilter = filter
+                            
+                            switch filter {
+                            case .all:
+                                currentPlay = allPlays.first
+                            case .touchdowns:
+                                currentPlay = allPlays.first(where: { $0.isTouchdown })
+                            case .firstDowns:
+                                currentPlay = allPlays.first(where: { $0.isFirstDown })
+                            case .explosive:
+                                currentPlay = allPlays.first(where: { $0.airYards >= 20 })
+                            }
                         }
                     }
                 }
@@ -76,15 +81,18 @@ struct FilmView: View {
             
             Rectangle().fill(Color.white.opacity(0.1)).frame(height: 1)
             
-            // 4. The Tape List
-            LazyVStack(spacing: 0) {
-                ForEach(filteredPlays) { play in
-                    PlayRowView(play: play, isPlaying: currentPlay?.id == play.id, accentColor: teamSecondary)
-                        .contentShape(Rectangle())
-                        .onTapGesture {
-                            currentPlay = play
-                        }
-                    Rectangle().fill(Color.white.opacity(0.05)).frame(height: 1)
+            ScrollView {
+                LazyVStack(spacing: 0) {
+                    ForEach(filteredPlays) { play in
+                        PlayRowView(play: play, isPlaying: currentPlay?.id == play.id, accentColor: teamSecondary)
+                            .contentShape(Rectangle())
+                            .onTapGesture {
+                                let generator = UIImpactFeedbackGenerator(style: .medium)
+                                generator.impactOccurred()
+                                currentPlay = play
+                            }
+                        Rectangle().fill(Color.white.opacity(0.05)).frame(height: 1)
+                    }
                 }
             }
             .background(bgDark)
@@ -94,13 +102,11 @@ struct FilmView: View {
                 self.allPlays = try HighlightService.shared.getPlays()
                 self.currentPlay = self.allPlays.first
             } catch {
-                print("❌ Failed to load plays: \(error)")
+                print("Failed to load plays: \(error)")
             }
         }
     }
 }
-
-// MARK: - Helper Components (These need to be here so FilmView can see them!)
 
 struct FilterChip: View {
     var title: String
@@ -113,7 +119,6 @@ struct FilterChip: View {
             Text(title)
                 .font(.custom("MicrogrammaD-BoldExte", size: 10))
                 .padding(.horizontal, 16).padding(.vertical, 8)
-                // Draftballr pill style: Transparent background, neon borders when selected
                 .background(isSelected ? accentColor.opacity(0.1) : Color.white.opacity(0.03))
                 .foregroundColor(isSelected ? accentColor : .gray)
                 .border(isSelected ? accentColor : Color.white.opacity(0.1))
@@ -128,8 +133,6 @@ struct PlayRowView: View {
     
     var body: some View {
         HStack(spacing: 16) {
-            
-            // Cyber Play Icon
             ZStack {
                 Rectangle()
                     .fill(isPlaying ? accentColor.opacity(0.2) : Color.white.opacity(0.05))
@@ -138,7 +141,7 @@ struct PlayRowView: View {
                 
                 Image(systemName: isPlaying ? "play.fill" : "video")
                     .foregroundColor(isPlaying ? accentColor : .gray)
-                    .font(.custom("MicrogrammaD-BoldExte", size: 12))
+                    .font(.system(size: 12))
             }
             
             VStack(alignment: .leading, spacing: 6) {
@@ -157,7 +160,6 @@ struct PlayRowView: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 12)
-        // Highlight the entire row slightly when playing
         .background(isPlaying ? Color.white.opacity(0.02) : Color.clear)
     }
 }

@@ -37,9 +37,6 @@ private let allStatDefs: [StatDef] = [
     StatDef(key: "Target Rate", label: "TGT%",  format: { String(format: "%.1f%%", $0) }),
 ]
 
-
-//heat map table
-
 private func heatRatio(key: String, value: Double) -> Double {
     guard let avg = draftAvg[key], avg != 0 else { return 0 }
     let raw = (value - avg) / avg
@@ -81,7 +78,6 @@ private func pctLabel(_ ratio: Double) -> String {
 
 struct PlayerProfileView: View {
     let prospect: Prospect
-
     let bgDark = Color(red: 0.03, green: 0.05, blue: 0.08)
 
     var teamPrimary: Color   { Color(hex: prospect.primaryColorHex) }
@@ -116,7 +112,6 @@ struct PlayerProfileView: View {
                         .padding(.top, 16).padding(.bottom, 24)
 
                         VStack(alignment: .leading, spacing: 4) {
-
                             Text(prospect.firstName)
                                 .font(.custom("MicrogrammaD-BoldExte", size: 28)).foregroundColor(.white)
                             Text(prospect.lastName)
@@ -222,7 +217,6 @@ struct PlayerProfileView: View {
                         .padding(.horizontal)
 
                         Divider().background(Color.white.opacity(0.1)).padding(.vertical, 8)
-
                         AdvancedMetricsTable(prospect: prospect, teamSecondary: teamSecondary)
 
                         if let logs = prospect.gameLogs {
@@ -251,7 +245,7 @@ struct PlayerProfileView: View {
                 } else {
                     VStack {
                         Spacer().frame(height: 50)
-                        Text("MODULE UNDER CONSTRUCTION")
+                        Text("// MODULE_UNDER_CONSTRUCTION")
                             .font(.system(.caption, design: .monospaced)).foregroundColor(.gray)
                         Spacer().frame(height: 200)
                     }
@@ -271,8 +265,7 @@ struct StatMatrixView: View {
     let bgDark    = Color(red: 0.02, green: 0.05, blue: 0.08)
     let headerBg  = Color(red: 0.03, green: 0.07, blue: 0.10)
     let border    = Color.white.opacity(0.06)
-    
-    let nameColW: CGFloat = 145
+    let nameColW: CGFloat = 130
     let cellW: CGFloat    = 58
     let cellH: CGFloat    = 46
 
@@ -306,7 +299,6 @@ struct StatMatrixView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-
             toolbarSection(label: "STATS") {
                 ForEach(allStatDefs) { stat in
                     pillButton(
@@ -323,7 +315,6 @@ struct StatMatrixView: View {
                 }
             }
 
-
             ZStack(alignment: .topLeading) {
                 ScrollView(.horizontal, showsIndicators: false) {
                     VStack(spacing: 0) {
@@ -339,6 +330,7 @@ struct StatMatrixView: View {
                         .background(headerBg)
 
                         Divider().background(border)
+
                         matrixRow(
                             name: "\(prospect.firstName) \(prospect.lastName)".uppercased(),
                             sub: "\(prospect.position) · \(prospect.teamName.uppercased())",
@@ -374,6 +366,7 @@ struct StatMatrixView: View {
                 VStack(spacing: 0) {
                     Color(red: 0.03, green: 0.07, blue: 0.10)
                         .frame(width: nameColW, height: 31)
+
                     frozenNameCell(
                         name: "\(prospect.firstName) \(prospect.lastName)".uppercased(),
                         sub: "\(prospect.position) · \(prospect.teamName.uppercased())",
@@ -393,7 +386,6 @@ struct StatMatrixView: View {
                     Color(red: 0.02, green: 0.05, blue: 0.08)
                         .frame(width: nameColW, height: cellH)
                 }
-                .shadow(color: Color.black.opacity(0.8), radius: 4, x: 4, y: 0)
             }
             .background(bgDark)
 
@@ -455,6 +447,7 @@ struct StatMatrixView: View {
             }
         }
     }
+
     @ViewBuilder
     private func matrixRow(name: String, sub: String, isSubject: Bool, data: [String: Double]?) -> some View {
         HStack(spacing: 0) {
@@ -472,31 +465,31 @@ struct StatMatrixView: View {
     }
 
     @ViewBuilder
-        private func frozenNameCell(name: String, sub: String, isSubject: Bool) -> some View {
-            VStack(alignment: .leading, spacing: 2) {
-                Text(name)
-                    .font(.custom("MicrogrammaD-BoldExte", size: 10))
-                    .foregroundColor(isSubject ? teamSecondary : Color(white: 0.70))
+    private func frozenNameCell(name: String, sub: String, isSubject: Bool) -> some View {
+        VStack(alignment: .leading, spacing: 2) {
+            Text(name)
+                .font(.custom("MicrogrammaD-BoldExte", size: 10))
+                .foregroundColor(isSubject ? teamSecondary : Color(white: 0.70))
+                .lineLimit(1)
+                .truncationMode(.tail)
+                .minimumScaleFactor(0.5)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+            if !sub.isEmpty {
+                Text(sub)
+                    .font(.system(size: 8, design: .monospaced))
+                    .foregroundColor(Color(white: 0.30))
                     .lineLimit(1)
                     .truncationMode(.tail)
-                    .minimumScaleFactor(0.5)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                
-                if !sub.isEmpty {
-                    Text(sub)
-                        .font(.system(size: 8, design: .monospaced))
-                        .foregroundColor(Color(white: 0.30))
-                        .lineLimit(1)
-                        .truncationMode(.tail)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                }
             }
-            .padding(.leading, 12)
-            .padding(.trailing, 8)
-            .frame(width: nameColW, height: cellH, alignment: .leading)
-            .background(bgDark)
-            .clipped()
         }
+        .padding(.leading, 12)
+        .padding(.trailing, 8)
+        .frame(width: nameColW, height: cellH, alignment: .leading)
+        .background(bgDark)
+        .clipped()
+    }
 
     @ViewBuilder
     private func toolbarSection<Content: View>(label: String, @ViewBuilder content: () -> Content) -> some View {
@@ -533,7 +526,6 @@ struct StatMatrixView: View {
     }
 }
 
-//player comparison single cell
 struct MatrixDataCell: View {
     let stat: StatDef
     let value: Double
@@ -554,7 +546,6 @@ struct MatrixDataCell: View {
     }
 }
 
-//player comparsion table
 struct AdvancedMetricsTable: View {
     let prospect: Prospect
     let teamSecondary: Color
@@ -581,8 +572,8 @@ struct AdvancedMetricsTable: View {
                 HStack(spacing: 0) {
                     MetricColumn(title: "TGT%",  value: formatPercent(prospect.targetShare),        subValue: "99", subColor: .cyan, width: 60, alignment: .leading)
                     MetricColumn(title: "ADOT",  value: String(format: "%.1f", prospect.ADOT),      subValue: "88", subColor: .cyan, width: 50)
-                    MetricColumn(title: "SLOT%", value: formatPercent(prospect.slotRate),            subValue: "45", subColor: .gray, width: 60)
-                    MetricColumn(title: "WIDE%", value: formatPercent(prospect.wideRate),            subValue: "92", subColor: .cyan, width: 60)
+                    MetricColumn(title: "SLOT%", value: formatPercent(prospect.slotRate),           subValue: "45", subColor: .gray, width: 60)
+                    MetricColumn(title: "WIDE%", value: formatPercent(prospect.wideRate),           subValue: "92", subColor: .cyan, width: 60)
                     MetricColumn(title: "CTGT%", value: formatPercent(prospect.contestedTargetRate), subValue: "78", subColor: .cyan, width: 60)
                 }
             }
@@ -610,7 +601,6 @@ struct AdvancedMetricsTable: View {
     func formatPercent(_ decimal: Double) -> String { String(format: "%.1f%%", decimal * 100) }
 }
 
-//NFL COMBINE STATS
 struct AthleticTestingTable: View {
     let prospect: Prospect
     let teamSecondary: Color
